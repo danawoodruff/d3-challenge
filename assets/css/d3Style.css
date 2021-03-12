@@ -5,10 +5,10 @@
 }
 
 .tooltip {
-  display: none;
+  display: block;
   position: absolute;
-  width: 80px;
-  height: 30px;
+  width: 200px;
+  height: 90px;
   padding: 2px;
   font: 12px sans-serif;
   text-align: center;
@@ -50,13 +50,15 @@
 
 .d3-tip {
   padding: 6px;
+  width: 170px;
+  height: 70px;
   font-size: 12px;
   line-height: 1;
   line-height: 1.5em;
-  color: #fff;
+  color: black;
   text-align: center;
   text-transform: capitalize;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgb(216, 210, 210);
   border-radius: 4px;
 }
 

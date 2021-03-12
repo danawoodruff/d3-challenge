@@ -114,22 +114,29 @@ function loadChart() {
             .style("opacity", "0.7")
             .attr("stroke", "black");
 
-        // Step 1: Append a div to the body to create tooltips, assign it a class
-        // =======================================================
-        let toolTip = d3.select("#scatter").append("div")
-            .attr("class", "tooltip");
+        // Add function for tooltip
+        let toolTip = d3
+            .tip()
+            .attr("class", "d3-tip")
+            .offset([40, 120])
+            .html(function(d) {
+                // console.log(d);
+                return d;
+            })
+        svg.call(toolTip);
+        
 
-        // Step 2: Add an onmouseover event to display a tooltip
-        // ========================================================
+        // Add an on.mouseover event to display a tooltip
         circlesGroup.on("mouseover", function (event, d) {
-            toolTip.style("display", "block");
-            toolTip.html(`State: <strong>${d}</strong>`)
-                .style("left", event.pageX + "px")
-                .style("top", event.pageY + "px");
+            toolTip.show(`<strong>State : ${event.State}</strong><br>
+                        <strong>EV Registrations : ${d3.format(',')(event.EV_Registration)}</strong><br>
+                        <strong>Charging Ports : ${d3.format(',')(event.Charge_Ports)}</strong>`);
         })
-            // Step 3: Add an onmouseout event to make the tooltip invisible
-        circlesGroup.on("mouseout", function () {
-                toolTip.style("display", "none");
+
+        // Add a on.mouseout event to make the tooltip invisible
+        circlesGroup.on("mouseout", function (event, d) {
+            // toolTip.style("display", "none");
+            toolTip.hide(event.State);
         });
 
 
