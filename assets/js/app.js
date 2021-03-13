@@ -52,7 +52,7 @@ function loadChart() {
         // Declare scales
         let xScale = d3.scaleLinear()
             .domain([0, 11])
-            .range([0, chartWidth]);
+            .range([0, chartWidth - margin.right]);
 
         // Configure a linear scale with a range between the chartHeight and 0
         let yScale = d3.scaleLinear()
