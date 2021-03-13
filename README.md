@@ -1,6 +1,5 @@
 <html>
-<p align="center"><img width="100%" height="40px" src="Images/background.jpg"></p>
-<br>            
+<p align="center"><img width="100%" height="40px" src="Images/background.jpg"></p>            
 <body>
 <p>
 The project pulls together three datasets and seeks to provide an interactive visual display of the key datapoints.
