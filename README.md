@@ -1,5 +1,5 @@
 <html>
-<p align="center"><img width="100%" height="100px" src="Images/background.jpg"></p>
+<p align="center"><img width="100%" height="80px" src="Images/background.jpg"></p>
 <br>            
 <body>
 <p>
@@ -10,6 +10,6 @@ The bubble chart is dynamically created based upon an [EV Dataset](assets/data/E
 To view the JavaScript code: [JavaScript Code](assets/js/app.js)<br>
 To view the HTML code: [HTML Code](index.html)</p><br>
 
-<p align="center"><img width="1362" height="auto" src="Images/pageview.PNG"></p>
+<p align="center"><img width="988" height="auto" src="Images/pageview.PNG"></p>
 </body>
 </html>
