@@ -10,7 +10,9 @@ The bubble chart is dynamically created based upon an [EV Dataset](assets/data/E
 Users can view the original data sources via live links at the bottom of the page.
 
 To view the JavaScript code: [JavaScript Code](assets/js/app.js)<br>
-To view the HTML code: [HTML Code](index.html)</p><br>
+To view the HTML code: [HTML Code](index.html)<br>
+To view the CSS code: [CSS code](assets/css/style.css)<br>
+To view the D3 CSS code: [D3 CSS code](assets/css/d3Style.css)</p><br>
 
 <p align="center"><img width="988" height="auto" src="Images/pageview.PNG"></p>
 </body>
