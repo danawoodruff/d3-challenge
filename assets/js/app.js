@@ -81,15 +81,14 @@ function loadChart() {
             .call(bottomAxis);
 
         // Axis Titles
-        chartGroup.append("text")
+        chartGroup.append("text")  //x-axis
             .attr("transform", `translate(${chartWidth / 2}, ${chartHeight + 40})`)
             .attr("text-anchor", "middle")
             .attr("font-size", "16px")
             .text("Charging Stations per Ten EVs");
 
-        chartGroup.append("text")
-            // .attr("transform", `translate(-40, ${chartHeight / 2})`)
-            .attr("y", 0 - 35)
+        chartGroup.append("text")  //y-axis
+            .attr("y", 0 - 35)  
             .attr("x", 0 - (chartHeight / 3))
             .attr("text-anchor", "end")
             .attr("font-size", "16px")
