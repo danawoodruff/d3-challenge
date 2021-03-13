@@ -1,5 +1,5 @@
 <html>
-<p align="center"><img width="100%" height="80px" src="Images/background.jpg"></p>
+<p align="center"><img width="100%" height="40px" src="Images/background.jpg"></p>
 <br>            
 <body>
 <p>
