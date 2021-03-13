@@ -10,6 +10,6 @@ Chart dynamically created based upon an [EV Dataset](assets/data/EVs.csv)- using
 To view the JavaScript code: [JavaScript Code](assets/js/app.js)<br>
 To view the HTML code: [HTML Code](index.html)</p><br>
 
-<p align="center"><img width="1362" height="auto" src="static/images/pageview.PNG"></p>
+<p align="center"><img width="1362" height="auto" src="Images/pageview.PNG"></p>
 </body>
 </html>
