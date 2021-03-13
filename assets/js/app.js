@@ -13,10 +13,7 @@ function loadChart() {
     let svgWidth = window.innerWidth;
     let svgHeight = 800;
 
-    // Define SVG area dimensions
-    // let svgWidth = 960;
-    // let svgHeight = 800;
-
+    
     // Define the chart's margins as an object
     let margin = {
         top: 60,
@@ -99,10 +96,7 @@ function loadChart() {
             .attr("transform", "rotate(-90)")
             .text("EV Registrations per 10,000 drivers");
 
-        // Add circles for driver population
-        // let circlesGroup = chartGroup.append('g')
-        
-
+        // Add circles for licensed driver population
         let circlesGroup = chartGroup.selectAll("circle")
             .data(EVData)
             .enter()
@@ -126,20 +120,26 @@ function loadChart() {
         svg.call(toolTip);
         
 
-        // Add an on.mouseover event to display a tooltip
+        // Add an on.mouseover event to display a tooltip and transition color when selected
         circlesGroup.on("mouseover", function (event, d) {
             toolTip.show(`<strong>State : ${event.State}</strong><br>
                         <strong>EV Registrations : ${d3.format(',')(event.EV_Registration)}</strong><br>
                         <strong>Charging Ports : ${d3.format(',')(event.Charge_Ports)}</strong>`);
+            d3.select(this)
+                .transition()
+                .duration(300)
+                .style("fill", "lime");
+            
         })
 
         // Add a on.mouseout event to make the tooltip invisible
         circlesGroup.on("mouseout", function (event, d) {
-            // toolTip.style("display", "none");
             toolTip.hide(event.State);
+            d3.select(this)
+                .transition()
+                .duration(300)
+                .style("fill", "#69b3a2");
         });
-
-
     });
 }
 // When the browser loads, loadChart() is called

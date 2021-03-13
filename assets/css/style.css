@@ -17,3 +17,20 @@ body {
 p {
   font-size: 140%;
 }
+
+h1 {
+  color: black;
+  font-family: 'algerian';
+  font-weight: bold;
+}
+
+h2 {
+  color: black;
+  font-family: 'sans-serif';
+  font-weight: bold;
+  font-style: italic;
+}
+
+#footer {
+  margin-left: 110px;
+}
