@@ -2,7 +2,7 @@
 <p align="center"><img width="100%" height="40px" src="Images/background.jpg"></p>            
 <body>
 <p>
-The project pulls together three datasets and seeks to provide an interactive visual display of the key datapoints.
+The project pulls together three datasets to provide an interactive visual display of the key datapoints.
 
 The bubble chart is dynamically created based upon an [EV Dataset](assets/data/EVs.csv)- using JavaScript, HTML, and CSS, and D3.js.  The chart is responsive to screen size. Detailed data on a bubble is obtained by hovering over the bubble- the user verifies which bubble has been selected by its transition to lime green.  The decision was made to not statically label each bubble because of overlapping bubbles.: <a href="https://danawoodruff.github.io/d3-challenge/">View GitHub-Page</a><br>
 
