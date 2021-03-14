@@ -18,6 +18,10 @@ body {
   background-repeat: no-repeat; 
 }
 
+.article {
+  padding-top: 25px;
+}
+
 p {
   font-size: 140%;
 }
