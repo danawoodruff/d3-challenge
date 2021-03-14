@@ -17,6 +17,6 @@ To view the HTML code: [HTML Code](index.html)<br>
 To view the CSS code: [CSS code](assets/css/style.css)<br>
 To view the D3 CSS code: [D3 CSS code](assets/css/d3Style.css)</p>
 
-<p align="center"><img width="500" height="auto" src="Images/pageview.PNG">  <img width="500" height="auto" src="Images/pageview2.PNG"></p>
+<p align="center"><img width="500" height="auto" src="Images/pageview.PNG"> <img width="500" height="auto" src="Images/pageview2.PNG"></p>
 </body>
 </html>
