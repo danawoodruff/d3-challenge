@@ -1,3 +1,4 @@
+// v3-14 DKW
 // Create a responsive chart horizontally
 function makeResponsive() {
     let svgArea = d3.select("body").select("svg");
