@@ -4,19 +4,6 @@
   text-anchor: middle;
 }
 
-.tooltip {
-  display: block;
-  position: absolute;
-  width: 200px;
-  height: 90px;
-  padding: 2px;
-  font: 12px sans-serif;
-  text-align: center;
-  background: gray;
-  border: 0;
-  border-radius: 10px;
-}
-
 .active {
   font-weight: bold;
   fill: #000;
@@ -26,7 +13,7 @@
 
 .inactive {
   font-weight: lighter;
-  fill: #c9c9c9;
+  fill: #7a7878;
   transition: fill 0.3s ease-out;
   text-anchor: middle;
 }
@@ -34,13 +21,6 @@
 .inactive:hover {
   fill: #000;
   cursor: pointer;
-}
-
-/* font size dependent on radius, see app.js */
-.stateText {
-  font-family: sans-serif;
-  fill: #fff;
-  text-anchor: middle;
 }
 
 .chart {
@@ -66,10 +46,7 @@
 
 /* Mobile Rules */
 @media screen and (max-width: 530px) {
-  .stateText {
-    display: none;
-  }
-
+  
   .aText {
     font-size: 14px;
   }
