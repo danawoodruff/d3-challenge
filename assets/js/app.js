@@ -141,7 +141,7 @@ d3.csv("./assets/data/EVs.csv").then(function (EVData) {
 
     let ylabel = chartGroup.append("text")  //y-axis
         .attr("y", 0 - 35)
-        .attr("x", 0 - (chartHeight / 3))
+        .attr("x", 0 - (chartHeight / 2))
         .classed("active", true)
         .attr("text-anchor", "end")
         .attr("font-size", "16px")
