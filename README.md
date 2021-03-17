@@ -4,7 +4,7 @@
 <p>
 The project pulls together three datasets to provide an interactive visual display of the key datapoints.
 
-The bubble chart is dynamically created based upon an [EV Dataset](assets/data/EVs.csv)- using JavaScript, HTML, and CSS, and D3.js.  The chart is responsive to screen size. Detailed data (State name, number of EV registrations, and the number of Charge Ports) on a bubble is obtained by hovering over the bubble- the user verifies which bubble has been selected by its transition to a lime green color.  The decision was made to not statically label each bubble because of the overlapping bubbles for some data points.: <a href="https://danawoodruff.github.io/d3-challenge/">View GitHub-Page</a><br>
+The bubble chart is dynamically created based upon an [EV Dataset](assets/data/EVs.csv)- using JavaScript, HTML, and CSS, and D3.js.  The chart is responsive to screen size. Detailed data (State name, number of EV registrations, and the number of Charge Ports) on a bubble is obtained by hovering over the bubble- the user verifies which bubble has been selected by its transition to a lime green color.  The decision was made to not statically label each bubble because of the overlapping bubbles for some data points.: <a href="https://danawoodruff.github.io/d3-challenge/">View GitHub-Page.</a><br> The opacity of the bubbles allow the user to select, and verify their selection, of bubbles that are overlapped.
 
 <p align="center"><img width="387" height="auto" src="Images/mouseover.PNG">
 
