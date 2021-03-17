@@ -11,7 +11,6 @@ function makeResponsive() {
     let svgWidth = 1200;
     let svgHeight = 800;
 
-
     // Define the chart's margins as an object
     let margin = {
         top: 60,
@@ -89,7 +88,6 @@ d3.csv("./assets/data/EVs.csv").then(function (EVData) {
     // xLinearScale function above csv import
     let xLinearScale = xScale(EVData, chosenXAxis);
 
-
     // Configure a linear scale with a range between the chartHeight and 0
     let yScale = d3.scaleLinear()
         .domain([0, 100])
@@ -104,7 +102,7 @@ d3.csv("./assets/data/EVs.csv").then(function (EVData) {
     let bottomAxis = d3.axisBottom(xLinearScale);
     let leftAxis = d3.axisLeft(yScale);
 
-        // Append an SVG group element to the chartGroup, create the Y axis inside of it
+    // Append an SVG group element to the chartGroup, create the Y axis inside of it
     let yAxis = chartGroup.append("g")
         .classed("axis", true)
         .call(leftAxis);
@@ -169,6 +167,7 @@ d3.csv("./assets/data/EVs.csv").then(function (EVData) {
             // console.log(d);
             return d;
         })
+    
     svg.call(toolTip);
 
      // x axis labels event listener
@@ -221,7 +220,7 @@ d3.csv("./assets/data/EVs.csv").then(function (EVData) {
         toolTip.hide(event.State);
         d3.select(this)
             .transition()
-            .duration(300)
+            .duration(200)
             .style("fill", "#69b3a2");
     });
     });
